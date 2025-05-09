@@ -1,1 +1,197 @@
-/* You can add global styles to this file, and also import other style files */
+/**
+* CSS Reset
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+//Basic image reset
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    hanging-punctuation: first last;
+    color-scheme: light dark;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p,
+li,
+figcaption {
+    text-wrap: pretty;
+    // max-width: 65ch;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+        scroll-behavior: smooth;
+        scroll-padding-top: 2rem;
+    }
+}
+
+/* 
+ * Global styles
+ */
+
+:root {
+
+    // Colors
+    --clr-primary-300: hsl(25, 51%, 49%);
+    --clr-primary-500: hsl(25, 97%, 53%);
+    --clr-neutral-50: hsl(0, 100%, 100%);
+    --clr-neutral-500: hsl(217, 12%, 63%);
+    --clr-neutral-800: #272E38;
+    --clr-neutral-900: hsl(213, 19%, 18%);
+    --clr-neutral-950: #141519;
+    --clr-card-shadow: #0d0e11;
+    --clr-bg-gradient: linear-gradient(45deg, rgba(23, 30, 38, 1) 0%, rgba(30, 37, 47, 1) 100%);
+
+    //Typography
+
+    --ff-primary: "Overpass", sans-serif;
+
+    // --fs-xlg: clamp(2.5rem, 2.1466165413533833rem + 1.5037593984962405vw, 3.5rem); // 40px - 56px
+    --fs-lg: 1.125rem; // 18px
+    --fs-m: 0.938; // 15px
+    --fs-sm: 0.75rem; // 14px
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --lh-body: 1.5;
+    --lh-title: 1.2;
+
+    // Spacing
+    --sp-56: 3.5rem; // 48px
+    --sp-48: 3rem; // 44px
+    --sp-44: 2.75rem; // 44px
+    --sp-40: 2.5rem; // 40px
+    --sp-36: 2.25rem; // 36px
+    --sp-32: 2rem; // 32px
+    --sp-28: 1.75rem; // 28px
+    --sp-24: 1.5rem; // 24px
+    --sp-20: 1.25rem; //20px
+    --sp-16: 1rem; // 16px
+    --sp-12: 0.75rem; // 12px
+    --sp-8: 0.5rem; // 8px
+    --sp-4: 0.25rem; // 4px
+    --sp-2: 0.125; // 2px
+
+    // Breakpoints
+    --bp-sm: 23.438rem; // 375px
+    --bp-lg: 90rem; // 1440px
+}
+
+/*
+ * Global styles
+ */
+body {
+    background-color: var(--clr-neutral-950);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-m);
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: var(--lh-body);
+
+    &>* {
+        width: 100%;
+    }
+}
+
+main {
+    flex: 1;
+    display: grid;
+    place-items: center;
+}
+
+h1,
+h2 {
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-title);
+    font-size: 1.75rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+* Utilities
+*/
+
+.card {
+    background: var(--clr-bg-gradient);
+    padding: var(--sp-44);
+    border-radius: 2rem;
+    max-width: 28rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-32);
+    box-shadow: 0 0 2rem var();
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: var(--sp-8);
+
+        &>* {
+            width: 100%;
+        }
+
+        .title {
+            color: var(--clr-neutral-50);
+        }
+
+        .text {
+            color: var(--clr-neutral-500);
+        }
+
+        .back {
+            color: var(--clr-primary-300);
+            font-size: var(--fs-sm);
+        }
+    }
+
+    &__tag,
+    &__icon {
+        margin-bottom: var(--sp-12);
+    }
+}

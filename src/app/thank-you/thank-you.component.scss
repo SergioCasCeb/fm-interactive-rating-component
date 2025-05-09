@@ -1,0 +1,14 @@
+.card {
+    align-items: center;
+
+    &__tag {
+        background-color: var(--clr-neutral-800);
+        color: var(--clr-primary-500);
+        padding: var(--sp-8) var(--sp-24) var(--sp-4) var(--sp-24);
+        border-radius: 50vw;
+    }
+
+    &__description {
+        text-align: center;
+    }
+}

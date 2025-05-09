@@ -1,0 +1,16 @@
+footer {
+    text-align: center;
+    font-size: var(--fs-sm);
+    padding: var(--sp-8) var(--sp-20);
+    color: var(--clr-neutral-50);
+
+    a {
+        font-weight: var(--fw-bold);
+        color: var(--clr-primary-500);
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}
