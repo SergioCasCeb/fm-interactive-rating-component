@@ -1,7 +1,7 @@
 .card {
     &__icon {
-        width: var(--circle-fluid-size);
-        height: var(--circle-fluid-size);
+        width: var(--icon-circle-fluid-size);
+        height: var(--icon-circle-fluid-size);
         background-color: var(--clr-neutral-800);
         border-radius: 100%;
         display: grid;
@@ -24,13 +24,13 @@
 
             label {
                 position: relative;
-                width: var(--circle-fluid-size);
-                height: var(--circle-fluid-size);
+                width: var(--input-circle-fluid-size);
+                height: var(--input-circle-fluid-size);
 
                 input {
                     appearance: none;
-                    width: var(--circle-fluid-size);
-                    height: var(--circle-fluid-size);
+                    width: var(--input-circle-fluid-size);
+                    height: var(--input-circle-fluid-size);
                     background-color: var(--clr-neutral-800);
                     border-radius: 100%;
                     cursor: pointer;

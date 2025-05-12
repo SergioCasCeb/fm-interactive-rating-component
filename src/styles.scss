@@ -106,7 +106,8 @@ figcaption {
     --sp-2: 0.125; // 2px
 
     //Circles
-    --circle-fluid-size: clamp(2.5rem, 0.8448275862068966rem + 6.896551724137931vw, 3rem);
+    --icon-circle-fluid-size: clamp(2.5rem, 0.8448275862068966rem + 6.896551724137931vw, 3rem);
+    --input-circle-fluid-size: clamp(2.625rem, 0.9698275862068966rem + 6.896551724137931vw, 3.125rem);
 
     //icon
     --icon-fluid-size: clamp(0.875rem, 0.46120689655172414rem + 1.7241379310344827vw, 1rem);
