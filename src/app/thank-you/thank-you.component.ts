@@ -10,7 +10,7 @@ export class ThankYouComponent {
   //Inputs
   value = input.required<string>();
 
-  //Outpus
+  //Outputs
   close = output();
 
   //Methods
