@@ -16,6 +16,10 @@ export class AppComponent {
   //Method
   showMsg(value: string) {
     this.reviewValue.set(value);
+
+    setTimeout(() => {
+      this.reviewValue.set('');
+    }, 5000);
   }
 
   hideMsg() {
