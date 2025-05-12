@@ -78,9 +78,9 @@ figcaption {
 
     --ff-primary: "Overpass", sans-serif;
 
-    // --fs-xlg: clamp(2.5rem, 2.1466165413533833rem + 1.5037593984962405vw, 3.5rem); // 40px - 56px
-    --fs-lg: 1.125rem; // 18px
-    --fs-m: 0.938; // 15px
+    --fs-xlg: clamp(1.5rem, 0.6724137931034483rem + 3.4482758620689653vw, 1.75rem); // 24px - 28px
+    --fs-lg: 1.25rem; // 18px
+    --fs-m: clamp(0.875rem, 0.6664482758620691rem + 0.8689655172413786vw, 0.938rem); // 14px - 15px
     --fs-sm: 0.75rem; // 14px
 
     --fw-regular: 400;
@@ -105,6 +105,15 @@ figcaption {
     --sp-4: 0.25rem; // 4px
     --sp-2: 0.125; // 2px
 
+    //Circles
+    --circle-fluid-size: clamp(2.5rem, 0.8448275862068966rem + 6.896551724137931vw, 3rem);
+
+    //icon
+    --icon-fluid-size: clamp(0.875rem, 0.46120689655172414rem + 1.7241379310344827vw, 1rem);
+
+    //image
+    --image-fluid-size: clamp(8rem, 0.9655172413793114rem + 29.310344827586203vw, 10.125rem);
+
     // Breakpoints
     --bp-sm: 23.438rem; // 375px
     --bp-lg: 90rem; // 1440px
@@ -124,6 +133,7 @@ body {
     align-items: center;
     justify-content: center;
     line-height: var(--lh-body);
+    padding: 0 var(--sp-24);
 
     &>* {
         width: 100%;
@@ -140,7 +150,7 @@ h1,
 h2 {
     font-weight: var(--fw-bold);
     line-height: var(--lh-title);
-    font-size: 1.75rem;
+    font-size: var(--fs-xlg);
 }
 
 ul {
@@ -157,13 +167,15 @@ a {
 
 .card {
     background: var(--clr-bg-gradient);
-    padding: var(--sp-44);
-    border-radius: 2rem;
+    padding: clamp(1.5rem, -2.637931034482759rem + 17.24137931034483vw, 2.75rem); //24 to 44
+    border-radius: clamp(1rem, -2.310344827586207rem + 13.793103448275861vw, 2rem);
     max-width: 28rem;
     display: flex;
     flex-direction: column;
-    gap: var(--sp-32);
-    box-shadow: 0 0 2rem var();
+    gap: clamp(1.75rem, 0.9224137931034483rem + 3.4482758620689653vw, 2rem);
+
+
+    box-shadow: 0 0 2rem var(--clr-card-shadow);
 
     &__description {
         display: flex;
@@ -192,6 +204,6 @@ a {
 
     &__tag,
     &__icon {
-        margin-bottom: var(--sp-12);
+        margin-bottom: clamp(0rem, -2.4827586206896552rem + 10.344827586206897vw, 0.75rem);
     }
 }
