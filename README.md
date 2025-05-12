@@ -11,6 +11,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Improvements](#future-improvements)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -33,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-interactive-rating-component-hiIHspc-T1)
 - Live Site URL: [netlify live site](https://fm-interactive-rating-component-sc.netlify.app)
 
 ## My process
@@ -51,6 +52,10 @@ Users should be able to:
 ### What I learned
 
 This project was a great way to support my Angular learning. Its simplicity made it easy to design and develop, giving me the chance to practice core Angular concepts like inputs, outputs, and conditional rendering.
+
+### Future Improvements
+
+For future update, some type of form validation will definitively be useful, as this will provide feedback to the user about the state of the rating form, such as missing inputs or possible errors.
 
 ### Useful resources
 
