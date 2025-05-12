@@ -167,9 +167,9 @@ a {
 
 .card {
     background: var(--clr-bg-gradient);
-    padding: clamp(1.5rem, -1.8103448275862069rem + 13.793103448275861vw, 2.5rem);
-    border-radius: clamp(1rem, -2.310344827586207rem + 13.793103448275861vw, 2rem);
-    max-width: 26rem;
+    padding: clamp(1.5rem, -0.9827586206896552rem + 10.344827586206897vw, 2.25rem);
+    border-radius: clamp(1rem, -0.6551724137931034rem + 6.896551724137931vw, 1.5rem);
+    max-width: 25rem;
     display: flex;
     flex-direction: column;
     gap: clamp(1.75rem, 0.9224137931034483rem + 3.4482758620689653vw, 2rem);
