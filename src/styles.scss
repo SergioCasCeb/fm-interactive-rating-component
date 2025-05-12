@@ -167,13 +167,12 @@ a {
 
 .card {
     background: var(--clr-bg-gradient);
-    padding: clamp(1.5rem, -2.637931034482759rem + 17.24137931034483vw, 2.75rem); //24 to 44
+    padding: clamp(1.5rem, -1.8103448275862069rem + 13.793103448275861vw, 2.5rem);
     border-radius: clamp(1rem, -2.310344827586207rem + 13.793103448275861vw, 2rem);
-    max-width: 28rem;
+    max-width: 26rem;
     display: flex;
     flex-direction: column;
     gap: clamp(1.75rem, 0.9224137931034483rem + 3.4482758620689653vw, 2rem);
-
 
     box-shadow: 0 0 2rem var(--clr-card-shadow);
 
